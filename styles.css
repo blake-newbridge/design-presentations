@@ -388,3 +388,17 @@ h1, h2, h3, h4, p { margin: 0; }
   .split > .stage + .stage { border-left: none; border-top: 1px solid var(--hair); }
   .masthead .meta-row { gap: 22px 30px; }
 }
+
+
+/* ---------- revision switcher (added for GitHub deploy) ---------- */
+.revswitch { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.revswitch .rs-cap { color: var(--muted); }
+.revswitch a {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  text-decoration: none; color: var(--muted);
+  border: 1px solid var(--hair); border-radius: 999px; padding: 4px 11px;
+  white-space: nowrap; line-height: 1.2;
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+.revswitch a:hover { color: #2a2825; border-color: #b6b0a4; }
+.revswitch a.is-current { background: #2b4250; color: #f3eee4; border-color: #2b4250; }
